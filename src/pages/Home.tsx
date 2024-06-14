@@ -1,11 +1,7 @@
-
-
 export const Home = () => {
-  
-
-    return <>
-    <h1>första sidan</h1>
+  return (
+    <>
+      <h1>första sidan</h1>
     </>
-
-  
-}
+  );
+};

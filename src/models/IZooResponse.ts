@@ -9,6 +9,7 @@ export interface IZooResponse {
     longDescription: string,
     medicine: string,
     isFed: boolean,
-    lastFed: string
+    lastFed: string,
+    imageUrl:string
 
 }
