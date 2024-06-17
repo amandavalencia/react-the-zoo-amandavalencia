@@ -1,5 +1,3 @@
-
-
 export interface IZooResponse {
     id: number,
     name: string,

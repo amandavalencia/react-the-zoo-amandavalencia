@@ -4,14 +4,20 @@ import { ShowAnimalInfo } from "../components/ShowAnimalInfo";
 
 export const Animal = () => {
   const { animalId } = useParams();
-  const { animals} = useFetch();
+  const {
+    animals: { animals },
+    feedAnimal,
+  } = useFetch();
 
- const animal = animals.find((animal) => animal.id === Number(animalId));
- if (!animal) {
-  return <div>Animal not found</div>;
-}
+  const animal = animals.find((animal) => animal.id === Number(animalId));
+  if (!animal) {
+    return <div>Animal not found</div>;
+  }
 
   return (
-    <ShowAnimalInfo animalInfo={animal}></ShowAnimalInfo>
+    <ShowAnimalInfo
+      animalInfo={animal}
+      feedAnimal={feedAnimal}
+    ></ShowAnimalInfo>
   );
 };

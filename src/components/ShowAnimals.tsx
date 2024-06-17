@@ -6,7 +6,6 @@ interface IShowAnimalProps {
 }
 
 export const ShowAnimals = ({ animals }: IShowAnimalProps) => {
-console.log(animals);
 
   return (
     <>

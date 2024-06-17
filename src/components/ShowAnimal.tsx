@@ -16,7 +16,7 @@ export const ShowAnimal = ({ animal }: IAnimalProps) => {
       <div className="animalDiv">
         <h1>{animal.name}</h1>
         <img src={animal.imageUrl} alt={animal.name} />
-        <button onClick={handleClick}>More information</button>
+        <button onClick={handleClick}>Mer information</button>
       </div>
     </>
   );
