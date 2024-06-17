@@ -1,11 +1,17 @@
 import { useParams } from "react-router-dom";
+import { useFetch } from "../hook/useFetch";
+import { ShowAnimalInfo } from "../components/ShowAnimalInfo";
 
 export const Animal = () => {
   const { animalId } = useParams();
+  const { animals} = useFetch();
+
+ const animal = animals.find((animal) => animal.id === Number(animalId));
+ if (!animal) {
+  return <div>Animal not found</div>;
+}
 
   return (
-    <>
-      <h1>Ett djur med id: {animalId} </h1>
-    </>
+    <ShowAnimalInfo animalInfo={animal}></ShowAnimalInfo>
   );
 };

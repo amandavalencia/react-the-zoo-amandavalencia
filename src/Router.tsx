@@ -5,6 +5,7 @@ import { Animals } from "./pages/Animals";
 import { Animal } from "./pages/Animal";
 import { NotFound } from "./pages/NotFound";
 
+
 export const router = createBrowserRouter([
   {
     path: "/",

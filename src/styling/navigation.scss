@@ -1,0 +1,21 @@
+nav{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+
+    p{
+        color: rgb(44, 44, 108);
+        font-size: 1.2rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    }
+
+    .navlink{
+        margin-right: 10px;
+        padding: 5px;
+        border-left: 3px solid rgb(44, 44, 108);
+        text-decoration: none;
+        color: rgb(44, 44, 108);
+    }
+
+}

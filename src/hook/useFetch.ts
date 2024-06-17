@@ -5,9 +5,9 @@ import axios from "axios";
 export const useFetch = () => {
   const [animals, setAnimals] = useState<IZooResponse[]>([]);
 
-  const getData = async () => {
+  const getData = async (id:string) => {
     const response = await axios.get<IZooResponse[]>(
-      "https://animals.azurewebsites.net/api/animals"
+      "https://animals.azurewebsites.net/api/animals/" + id
     );
     setAnimals(response.data);
   };
@@ -15,10 +15,10 @@ export const useFetch = () => {
   useEffect(() => {
     if (animals.length > 0) return;
     const getAnimals = async () => {
-      await getData();
+      await getData("");
     };
     getAnimals();
   });
 
-  return { animals };
+  return { animals, getData };
 };

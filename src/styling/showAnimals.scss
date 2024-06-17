@@ -1,0 +1,9 @@
+.animalsDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    img{
+        width: 300px;
+    }
+}

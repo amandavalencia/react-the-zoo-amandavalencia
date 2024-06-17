@@ -1,14 +1,11 @@
-import { NavLink, Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom"
+import "../styling/layout.scss"
+import { Navigation } from "../components/navigation"
 
 export const Layout = () => {
     return <>
-    <nav>
-
-        <NavLink to={"/Animals"}>Animals</NavLink>
-        <NavLink to={"/"}>Home</NavLink>
-
-    </nav>
-    <main>
+    <Navigation/>
+    <main className="mainContainer">
         <Outlet/>
     </main>
     </>
