@@ -6,8 +6,8 @@ export const Navigation = () => {
     <>
       <nav>
         <p>Fur-get Me Not</p>
-        <NavLink to={"/Animals"} className="navlink" >Animals</NavLink>
-        <NavLink to={"/"} className="navlink" >Home</NavLink>
+        <NavLink to={"/Animals"} className="navlink" >Mina Djur</NavLink>
+        <NavLink to={"/"} className="navlink" >Hem</NavLink>
       </nav>
     </>
   );

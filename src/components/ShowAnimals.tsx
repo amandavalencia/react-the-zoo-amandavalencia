@@ -9,7 +9,7 @@ export const ShowAnimals = ({ animals }: IShowAnimalProps) => {
 
   return (
     <>
-      <h1>Animals</h1>
+      <h1>Mina Djur</h1>
       <div className="animalsDiv" >
         {animals.map((animal) => (
           <ShowAnimal animal={animal} key={animal.id} />

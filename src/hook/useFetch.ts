@@ -26,7 +26,7 @@ export const useFetch = () => {
   const feedAnimal = (animal:IZooResponse) => {
   const updatedAnimal = animals.animals.map((updateAnimal) =>{
         if(updateAnimal.name === animal.name){
-          return {...animal, isFed: true, lastFed: Date()};
+          return {...animal, isFed: !animal.isFed, lastFed: Date()};
         } else{
           return updateAnimal
         } 
@@ -40,6 +40,7 @@ export const useFetch = () => {
     if (animals.fetchDone) return;
     getData("");
   });
+
   
   return { animals, feedAnimal };
 };

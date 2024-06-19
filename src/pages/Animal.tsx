@@ -10,6 +10,7 @@ export const Animal = () => {
   } = useFetch();
 
   const animal = animals.find((animal) => animal.id === Number(animalId));
+
   if (!animal) {
     return <div>Animal not found</div>;
   }
