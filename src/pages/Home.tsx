@@ -1,7 +1,12 @@
+import { ShowHome } from "../components/ShowHome";
+import { useFetch } from "../hook/useFetch";
+
 export const Home = () => {
+const {animals: {animals}} = useFetch()
+
   return (
     <>
-      <h1>första sidan</h1>
+      <ShowHome animals={animals}/>
     </>
   );
 };
